@@ -24,13 +24,13 @@ public class ProcesoReceptorDG {
 
             System.out.println("Mensaje recibido: "+new String(mensaje));
 
-//            System.out.println("Enviando mensaje");
-//
-//            InetAddress addr2=InetAddress.getByName("localhost2");
-//            DatagramPacket datagrama2=new DatagramPacket(mensaje, mensaje.length,addr2,5556);
-//            datagramSocket.send(datagrama2);
-//
-//            System.out.println("Mensaje enviado");
+            System.out.println("Enviando mensaje");
+
+            InetAddress addr2=InetAddress.getByName("localhost");
+            DatagramPacket datagrama2=new DatagramPacket(mensaje, mensaje.length,addr2,5556);
+            datagramSocket.send(datagrama2);
+
+            System.out.println("Mensaje enviado");
 
             System.out.println("Cerrando el socket datagrama");
 
